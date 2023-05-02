@@ -17,23 +17,16 @@ import ru.mirea.zhumanov.mireaproject.databinding.FragmentBrowserBinding;
 public class BrowserFragment extends Fragment {
 
     private FragmentBrowserBinding binding;
+    private WebView mWebView;
 
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        BrowserViewModel browserViewModel =
-                new ViewModelProvider(this).get(BrowserViewModel.class);
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_browser, container, false);
 
-        binding = FragmentBrowserBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        mWebView = (WebView) view.findViewById(R.id.webViewYandex);
+        mWebView.loadUrl("https://www.google.com/");
 
-        WebView webView = root.findViewById(R.id.web_view_g);
-
-        // Url of website is passed here
-        webView.loadUrl("https://google.com/");
-
-        // WebViewController is used
-        webView.setWebViewClient(new WebViewFragment());
-
-        return root;
+        return view;
 
     }
 
