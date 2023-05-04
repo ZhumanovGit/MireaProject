@@ -39,16 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
         fragmentManager = getSupportFragmentManager();
-        switch (view.getId()){
-            case R.id.btnFirstFragment:
-                fragmentManager.beginTransaction().replace(R.id.fragmentContainer, fragment1).
-                        commit();
-                OneTimeWorkRequest myWorkRequest = new OneTimeWorkRequest.Builder(UploadWorker.class).build();
-                WorkManager.getInstance().enqueue(myWorkRequest);
-                break;
+        fragmentManager.beginTransaction().replace(R.id.fragmentContainer, fragment1).
+                commit();
+        OneTimeWorkRequest myWorkRequest = new OneTimeWorkRequest.Builder(UploadWorker.class).build();
+        WorkManager.getInstance().enqueue(myWorkRequest);
 
-            default:
-                break;
-        }
     }
 }
