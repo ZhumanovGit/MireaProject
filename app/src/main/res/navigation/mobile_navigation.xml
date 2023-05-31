@@ -3,9 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_browser">
+    app:startDestination="@+id/nav_home">
 
-
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ru.mirea.zhumanov.mireaproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -13,15 +17,39 @@
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
-
     <fragment
-        android:id="@+id/nav_data"
-        android:name="ru.mirea.zhumanov.mireaproject.ui.data.DataFragment"
-        android:label="Data"
-        tools:layout="@layout/fragment_data" />
+        android:id="@+id/nav_slideshow"
+        android:name="ru.mirea.zhumanov.mireaproject.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_browser"
-        android:name="ru.mirea.zhumanov.mireaproject.ui.browser.BrowserFragment"
+        android:name="ru.mirea.zhumanov.mireaproject.BrowserFragment"
         android:label="Browser"
         tools:layout="@layout/fragment_browser" />
+    <fragment
+        android:id="@+id/nav_data"
+        android:name="ru.mirea.zhumanov.mireaproject.DataFragment"
+        android:label="Data"
+        tools:layout="@layout/fragment_data" />
+    <activity
+        android:id="@+id/nav_activity_photo"
+        android:name="ru.mirea.zhumanov.mireaproject.CameraActivity"
+        android:label="Камера"
+        tools:layout="@layout/activity_camera"/>
+    <activity
+        android:id="@+id/nav_activity_audio"
+        android:name="ru.mirea.zhumanov.mireaproject.RecordActivity"
+        android:label="Микрофон"
+        tools:layout="@layout/activity_record"/>
+    <activity
+        android:id="@+id/nav_activity_accelerometer"
+        android:name="ru.mirea.zhumanov.mireaproject.AccelerometerActivity"
+        android:label="Проверка"
+        tools:layout="@layout/activity_accelerometer"/>
+    <activity
+        android:id="@+id/nav_activity_profile"
+        android:name="ru.mirea.zhumanov.mireaproject.ProfileSetting"
+        android:label="Проверка"
+        tools:layout="@layout/activity_profile"/>
 </navigation>

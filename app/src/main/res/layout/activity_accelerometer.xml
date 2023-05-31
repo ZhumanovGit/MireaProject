@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccelerometerActivity">
+    tools:context="ru.mirea.zhumanov.mireaproject.AccelerometerActivity">
 
     <TextView
         android:id="@+id/textViewAzimuth"
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:onClick="onClickNewActivity"
-        android:text="To Main Activity"
+        android:text="To Home"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

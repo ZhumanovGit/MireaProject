@@ -1,4 +1,4 @@
-package ru.mirea.zhumanov.sensorappexample;
+package ru.mirea.zhumanov.mireaproject;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;

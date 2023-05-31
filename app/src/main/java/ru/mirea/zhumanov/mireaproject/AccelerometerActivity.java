@@ -1,4 +1,4 @@
-package ru.mirea.zhumanov.sensorappexample;
+package ru.mirea.zhumanov.mireaproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -16,11 +16,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import ru.mirea.zhumanov.sensorappexample.databinding.ActivityMainBinding;
+
 
 public class AccelerometerActivity extends AppCompatActivity implements SensorEventListener {
 
-    private ActivityMainBinding binding;
     private TextView magneticxTextView;
     private TextView magneticyTextView;
     private TextView magneticzTextView;

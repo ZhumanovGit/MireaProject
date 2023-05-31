@@ -1,4 +1,4 @@
-package ru.mirea.zhumanov.mireaproject.ui.browser;
+package ru.mirea.zhumanov.mireaproject;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,8 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import ru.mirea.zhumanov.mireaproject.R;
-import ru.mirea.zhumanov.mireaproject.WebViewFragment;
 import ru.mirea.zhumanov.mireaproject.databinding.FragmentBrowserBinding;
 
 public class BrowserFragment extends Fragment {
