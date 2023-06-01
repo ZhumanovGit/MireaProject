@@ -31,15 +31,16 @@
         <item
             android:id="@+id/nav_activity_photo"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Если забыл что ты красавец" />
+            android:title="Camera" />
         <item
             android:id="@+id/nav_activity_audio"
             android:icon="@android:drawable/presence_audio_online"
-            android:title="Услада для ушей" />
+            android:title="Audio" />
         <item
             android:id="@+id/nav_activity_accelerometer"
             android:icon="@android:drawable/ic_menu_help"
-            android:title="Проверка" />
+            android:title="Accelerometer" />
+
 
     </group>
 </menu>

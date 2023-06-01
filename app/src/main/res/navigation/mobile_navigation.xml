@@ -35,21 +35,22 @@
     <activity
         android:id="@+id/nav_activity_photo"
         android:name="ru.mirea.zhumanov.mireaproject.CameraActivity"
-        android:label="Камера"
+        android:label="Camera"
         tools:layout="@layout/activity_camera"/>
     <activity
         android:id="@+id/nav_activity_audio"
         android:name="ru.mirea.zhumanov.mireaproject.RecordActivity"
-        android:label="Микрофон"
+        android:label="Micro"
         tools:layout="@layout/activity_record"/>
     <activity
         android:id="@+id/nav_activity_accelerometer"
         android:name="ru.mirea.zhumanov.mireaproject.AccelerometerActivity"
-        android:label="Проверка"
+        android:label="Accelerometer"
         tools:layout="@layout/activity_accelerometer"/>
     <activity
         android:id="@+id/nav_activity_profile"
-        android:name="ru.mirea.zhumanov.mireaproject.ProfileSetting"
-        android:label="Проверка"
+        android:name="ru.mirea.zhumanov.mireaproject.ProfileActivity"
+        android:label="Profile"
         tools:layout="@layout/activity_profile"/>
+
 </navigation>

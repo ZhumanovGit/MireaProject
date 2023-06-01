@@ -14,7 +14,7 @@ import androidx.work.WorkRequest;
 
 public class MainActivity extends AppCompatActivity {
 
-    Fragment fragment1, fragment2;
+    Fragment fragment1;
     FragmentManager fragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

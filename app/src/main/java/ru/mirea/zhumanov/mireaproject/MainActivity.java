@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    public static final String imageURL = "https://avatars.mds.yandex.net/i?id=7dd16b461e1cfcebb1b3fa2da7ad57c2-5678013-images-thumbs&n=13";
+    String imageName = "finger_up.jpg";
+
     public static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
@@ -49,12 +52,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         setSupportActionBar(binding.appBarMain.toolbar);
-        /*binding.appBarMain.buttonDownloadImage.setOnClickListener(new View.OnClickListener() {
+        binding.appBarMain.buttonDownloadImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 downloadImage(imageURL, imageName, imageName);
             }
-        });*/
+        });
 
 
         DrawerLayout drawer = binding.drawerLayout;

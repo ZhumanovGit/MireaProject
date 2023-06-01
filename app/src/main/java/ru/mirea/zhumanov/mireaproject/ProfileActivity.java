@@ -1,6 +1,7 @@
 package ru.mirea.zhumanov.mireaproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -60,5 +61,9 @@ public class ProfileActivity extends AppCompatActivity {
                 Log.d(TAG, sharedPref.getString("NUMBER", "no inf"));
             }
         });
+    }
+    public void onClickHomeActivity(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
